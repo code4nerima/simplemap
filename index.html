@@ -48,11 +48,46 @@ var tanukiIcon = L.icon({
     shadowAnchor: [0, 0]
 });
 
-L.marker([35.74713166　, 139.62135666], {icon: tanukiIcon}).addTo(map)
-    .bindPopup('<a href="./images/35_74713166_139_62135666.jpg" target="_tanuki">大たぬき</a>');
+//L.marker([35.74713166　, 139.62135666], {icon: tanukiIcon}).addTo(map)
+    //.bindPopup('<a href="./images/35_74713166_139_62135666.jpg" target="_tanuki">大たぬき</a>');
 
 $.getJSON('./data/13120.json', function(data) {
     L.geoJson(data).addTo(map);
+});
+
+$.getJSON('./data/data.geojson', function(data) {
+    L.geoJson(data, {
+    	pointToLayer: function(geoJsonPoint, latlng) {
+	    	return L.marker(latlng, {icon: tanukiIcon}).addTo(map)
+		},
+		onEachFeature: function(feature, layer){
+			if (feature.properties) {
+				var popupContents ;
+				
+				if (feature.properties.content && feature.properties.picture) {
+					popupContents = "<a href=\"./images/" + feature.properties.picture + "\" target=\"_preview\">" + feature.properties.content + "</a>" ;					
+				} else if (feature.properties.content) {
+					popupContents = feature.properties.content ;
+				} else {
+					popupContents = "-" ;
+				}
+				
+				if (feature.properties.type) {
+					popupContents += "<br />" + feature.properties.type;
+				}
+				
+				if (feature.properties.size) {
+					popupContents += "<br />" + feature.properties.size;
+				}
+				
+				if (feature.properties.memo) {
+					popupContents += "<br />" + feature.properties.memo;
+				}
+				
+				layer.bindPopup(popupContents);
+    		}
+    	}
+    }).addTo(map);
 });
 
 </script>

@@ -1,0 +1,21 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 139.62135666,35.74713166 ]
+    },
+    "properties": {
+    "date":"2018/03/25",
+    "content":"大たぬき",
+    "address":"",
+    "picture":"35_74713166_139_62135666.jpg",
+    "type":"焼き物",
+    "size":"大",
+    "memo":"お蕎麦屋さん"
+    }
+  }
+]
+}
