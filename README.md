@@ -8,8 +8,9 @@
 * [Code for Nerima](http://code4nerima.org/)
 * [《Facebookページ》Code for Nerima](https://www.facebook.com/code4nerima/)
 
-お問い合わせ先
-メール:
+## お問い合わせ先
+
+メール:info@code4nerima.org
 
 ## ライセンスについて
 
