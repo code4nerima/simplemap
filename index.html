@@ -32,6 +32,23 @@ L.tileLayer(
 		maxZoom: 18
 	}
 ).addTo(map);
+
+L.marker([35.737841　, 139.653912]).addTo(map)
+    .bindPopup('練馬駅');
+    
+var tanukiIcon = L.icon({
+    iconUrl: 'tanuki_icon.png',
+    iconSize: [40, 40],
+    iconAnchor: [0, 0],
+    popupAnchor: [20, 0],
+    shadowUrl: '',
+    shadowSize: [38, 38],
+    shadowAnchor: [0, 0]
+});
+
+L.marker([35.74713166　, 139.62135666], {icon: tanukiIcon}).addTo(map)
+    .bindPopup('大たぬき');
+       
 </script>
 </body>
 </html>
