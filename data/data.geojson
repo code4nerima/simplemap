@@ -14,7 +14,31 @@
     "picture":"35_74713166_139_62135666.jpg",
     "type":"焼き物",
     "size":"大",
-    "memo":"お蕎麦屋さん"
+    "memo":"お蕎麦屋さん",
+    "fromtime":"0;00",
+    "totime":"23:59",
+    "owner_class":"shop",
+    "memo_hidden":"byYokota"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 139.63812694,35.73573277 ]
+    },
+    "properties": {
+    "date":"2018/03/25",
+    "content":"地味たぬき",
+    "address":"",
+    "picture":"35_73573277_139_63812694.jpg",
+    "type":"焼き物",
+    "size":"ミニ",
+    "memo":"天婦羅屋さん",
+    "fromtime":"0;00",
+    "totime":"23:59",
+    "owner_class":"shop",
+    "memo_hidden":"店名：天たけ"
     }
   }
 ]
