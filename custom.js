@@ -4,7 +4,7 @@ function onInitialLatLng() {
 }
 
 // onCreate : This function is called when page began.
-function onCreate() {
+function onCreate(map) {
     L.marker([35.737841　, 139.653912]).addTo(map)
     .bindPopup('練馬駅');
 }
@@ -54,4 +54,16 @@ function onCraeteMarkerPopup(feature, layer) {
         
         layer.bindPopup(popupContents);
     }
+}
+
+function onMarkerMouseOver(e) {
+
+}
+
+function onMarkerMouseOut(e) {
+
+}
+
+function onMarkerClick(e) {
+
 }
