@@ -6,6 +6,7 @@
 <title>練馬たぬきマップ</title>
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css"/>
 <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet-src.js"></script>
+<script language="javascript" src="custom.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <style>
 html, body  {
@@ -23,7 +24,9 @@ html, body  {
 <body>
 <div id="map"></div>
 <script>
-var map = L.map('map').setView([35.737841　, 139.653912], 13);
+
+var latlng = [35.737841　, 139.653912] ;
+var map = L.map('map').setView(latlng, 13);
 
 var mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
 
@@ -35,58 +38,20 @@ L.tileLayer(
 	}
 ).addTo(map);
 
-L.marker([35.737841　, 139.653912]).addTo(map)
-    .bindPopup('練馬駅');
+onCreate() ;
     
-var tanukiIcon = L.icon({
-    iconUrl: 'tanuki_icon.png',
-    iconSize: [40, 40],
-    iconAnchor: [0, 0],
-    popupAnchor: [20, 0],
-    shadowUrl: '',
-    shadowSize: [38, 38],
-    shadowAnchor: [0, 0]
-});
+var markerIcon = onCreateMarkerIcon();
 
-//L.marker([35.74713166　, 139.62135666], {icon: tanukiIcon}).addTo(map)
-    //.bindPopup('<a href="./images/35_74713166_139_62135666.jpg" target="_tanuki">大たぬき</a>');
-
-$.getJSON('./data/13120.json', function(data) {
+$.getJSON(onRequireAreaBorder(), function(data) {
     L.geoJson(data).addTo(map);
 });
 
 $.getJSON('./data/data.geojson', function(data) {
     L.geoJson(data, {
     	pointToLayer: function(geoJsonPoint, latlng) {
-	    	return L.marker(latlng, {icon: tanukiIcon}).addTo(map)
+	    	return L.marker(latlng, {icon: markerIcon}).addTo(map)
 		},
-		onEachFeature: function(feature, layer){
-			if (feature.properties) {
-				var popupContents ;
-				
-				if (feature.properties.content && feature.properties.picture) {
-					popupContents = "<a href=\"./images/" + feature.properties.picture + "\" target=\"_preview\">" + feature.properties.content + "</a>" ;					
-				} else if (feature.properties.content) {
-					popupContents = feature.properties.content ;
-				} else {
-					popupContents = "-" ;
-				}
-				
-				if (feature.properties.type) {
-					popupContents += "<br />" + feature.properties.type;
-				}
-				
-				if (feature.properties.size) {
-					popupContents += "<br />" + feature.properties.size;
-				}
-				
-				if (feature.properties.memo) {
-					popupContents += "<br />" + feature.properties.memo;
-				}
-				
-				layer.bindPopup(popupContents);
-    		}
-    	}
+		onEachFeature: onCraeteMarkerPopup
     }).addTo(map);
 });
 
