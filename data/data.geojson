@@ -18,7 +18,7 @@
     "fromtime":"0;00",
     "totime":"23:59",
     "owner_class":"shop",
-    "memo_hidden":"byYokota"
+    "memo_hidden":"by_Yokota"
     }
   },
   {
@@ -39,6 +39,26 @@
     "totime":"23:59",
     "owner_class":"shop",
     "memo_hidden":"店名：天たけ"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 139.69593811,35.72561004 ]
+    },
+    "properties": {
+    "date":"2018/02/24",
+    "content":"巨大たぬき",
+    "address":"",
+    "picture":"35_72561004_139_69593811.jpg",
+    "type":"焼き物",
+    "size":"巨大",
+    "memo":"企業",
+    "fromtime":"0;00",
+    "totime":"23:59",
+    "owner_class":"company",
+    "memo_hidden":"株式会社侍グループ"
     }
   }
 ]
