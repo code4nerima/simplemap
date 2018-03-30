@@ -60,6 +60,26 @@
     "owner_class":"company",
     "memo_hidden":"株式会社侍グループ"
     }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 139.63975524,35.73583221 ]
+    },
+    "properties": {
+    "date":"2018/03/25",
+    "content":"小料理屋たぬき",
+    "address":"",
+    "picture":"35_73583221_139_63975524.jpg",
+    "type":"焼き物",
+    "size":"普通",
+    "memo":"小料理屋さん",
+    "fromtime":"0;00",
+    "totime":"23:59",
+    "owner_class":"shop",
+    "memo_hidden":"小料理飛鳥"
+    }
   }
 ]
 }
