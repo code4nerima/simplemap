@@ -17,7 +17,7 @@
     "memo":"お蕎麦屋さん",
     "fromtime":"0;00",
     "totime":"23:59",
-    "owner_class":"shop",
+    "owner_class":"soba-restaurant",
     "memo_hidden":"by_Yokota"
     }
   },
@@ -77,7 +77,7 @@
     "memo":"小料理屋さん",
     "fromtime":"0;00",
     "totime":"23:59",
-    "owner_class":"shop",
+    "owner_class":"nomi-ya",
     "memo_hidden":"小料理飛鳥"
     }
   },
@@ -119,6 +119,66 @@
     "totime":"23:59",
     "owner_class":"restaurant",
     "memo_hidden":"たぬき"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 139.6055332,35.7443279 ]
+    },
+    "properties": {
+    "date":"2018/04/08",
+    "content":"金融機関のたぬきたち",
+    "address":"",
+    "picture":"35_7443279_139_6055332.jpg",
+    "type":"焼き物",
+    "size":"いろいろ",
+    "memo":"金融機関",
+    "fromtime":"0;00",
+    "totime":"23:59",
+    "owner_class":"bank",
+    "memo_hidden":"東京シティ信用金庫 石神井支店"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 139.6063252,35.7430082 ]
+    },
+    "properties": {
+    "date":"2018/04/08",
+    "content":"ガレージたぬき",
+    "address":"",
+    "picture":"35_7430082_139_6063252.jpg",
+    "type":"焼き物",
+    "size":"巨大",
+    "memo":"お花屋さん",
+    "fromtime":"0;00",
+    "totime":"23:59",
+    "owner_class":"flowershop",
+    "memo_hidden":"日東生花"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 139.6538876,35.736106 ]
+    },
+    "properties": {
+    "date":"2018/02/18",
+    "content":"磯料理たぬき",
+    "address":"",
+    "picture":"35_736106_139_6538876.jpg",
+    "type":"焼き物",
+    "size":"大型",
+    "memo":"飲み屋さん",
+    "fromtime":"0;00",
+    "totime":"23:59",
+    "owner_class":"nomi-ya",
+    "memo_hidden":"磯料理海峡"
     }
   }
 ]
