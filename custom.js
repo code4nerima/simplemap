@@ -5,8 +5,6 @@
 // onCreate : This function is called when page began.
 function onCreate(map) {
     // Load location.
-    var c = $.cookie() ;
-
     var lat = $.cookie('lat');
     var lng = $.cookie('lng');
     var zoom = $.cookie('zoom');
@@ -106,9 +104,9 @@ function onCreate(map) {
     function saveMap() {
         var c = map.getCenter() ;
             var z = map.getZoom() ;
-            $.cookie('lat', c.lat, { expires: 7, path: '/' });
-            $.cookie('lng', c.lng, { expires: 7, path: '/' });
-            $.cookie('zoom', z, { expires: 7, path: '/' });
+            $.cookie('lat', c.lat, { expires: 7, path: 'https://code4nerima.github.io/tanukimap/' });
+            $.cookie('lng', c.lng, { expires: 7, path: 'https://code4nerima.github.io/tanukimap/' });
+            $.cookie('zoom', z, { expires: 7, path: 'https://code4nerima.github.io/tanukimap/' });
     }
 }
 
