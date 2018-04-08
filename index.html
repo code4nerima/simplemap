@@ -17,92 +17,15 @@ crossorigin=""></script>
 <script language="javascript" src="functions.js"></script>
 <script language="javascript" src="custom.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<style>
-html, body  {
-	width: 100%;
-	height: 100%;
-	padding: 0px;
-	margin: 0px;
-}
-#map {
-	width: 100%;
-	height: 100%;
-}
-</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+<script src="js/jquery.cookie.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+<script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
 </head>
 <body>
 <div id="map"></div>
 <script>
-
-var latlng = onInitialLatLng() ;
-
-var map = L.map('map').setView(latlng, 13);
-
-var mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
-
-L.tileLayer(
-	'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-	{
-		attribution: 'Map data &copy; ' + mapLink,
-		maxZoom: 18
-	}
-).addTo(map);
-
-onCreate(map) ;
-	
-var info = L.control();
-
-info.onAdd = function (map) {
-    this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
-    this.update();
-    return this._div;
-};
-
-// method that we will use to update the control based on feature properties passed
-info.update = function (feature) {
-	var popupContents = onUpdateInfo(feature) ;
-	this._div.innerHTML = popupContents ;
-};
-
-info.addTo(map);
-
-var markerIcon = onCreateMarkerIcon();
-
-$.getJSON(onRequireAreaBorder(), function(data) {
-    L.geoJson(data).addTo(map);
-});
-
-$.getJSON('./data/data.geojson', function(data) {
-    L.geoJson(data, {
-    	pointToLayer: function(geoJsonPoint, latlng) {
-	    	return L.marker(latlng, {icon: markerIcon}).addTo(map)
-		},
-		onEachFeature: function(feature, layer) {
-			var popupContents = onCraeteMarkerPopup(feature, layer) ;
-
-       		layer.bindPopup(popupContents);
- 
-			layer.on({
-        		mouseover: function(e){
-					if (onMarkerMouseOver(e) == true) {
-						info.update(feature);
-					}
-				},
-        		mouseout: function(e){
-					onMarkerMouseOut(e) ;
-				},
-        		click: function(e){
-					onMarkerClick(e);
-				}
-    		});
-		}
-    }).addTo(map);
-});
-
-var popup = L.popup();
-
-map.on('click', onMapClick);
-
+onCreate();
 </script>
 </body>
 </html>
