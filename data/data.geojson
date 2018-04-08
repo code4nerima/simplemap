@@ -80,6 +80,26 @@
     "owner_class":"shop",
     "memo_hidden":"小料理飛鳥"
     }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 139.66223144,35.73900222 ]
+    },
+    "properties": {
+    "date":"2018/04/01",
+    "content":"看板坊やたぬき",
+    "address":"",
+    "picture":"35_73900222_139_66223144.jpg",
+    "type":"焼き物",
+    "size":"ミニ",
+    "memo":"お寿司屋さん",
+    "fromtime":"0;00",
+    "totime":"23:59",
+    "owner_class":"shop",
+    "memo_hidden":"魚がし寿司桜台店"
+    }
   }
 ]
 }
