@@ -55,9 +55,16 @@ function onCreate(map) {
         popupAnchor: [0, -20],
     });
     
-    $.getJSON('./data/13120.json', function(data) {
-        L.geoJson(data).addTo(map);
-    });
+    var bordersFilePathArray = new Array() ;
+
+    bordersFilePathArray.push('data/area01.geojson') ;
+    bordersFilePathArray.push('data/area02.geojson') ;
+    
+    for (var i=0; i<bordersFilePathArray.length; i++) {
+        $.getJSON(bordersFilePathArray[i], function(data) {
+            createAreaLayer(data).addTo(map);
+        });
+    }
     
     $.getJSON('./data/data.geojson', function(data) {
         L.geoJson(data, {
@@ -121,7 +128,7 @@ function onUpdateInfo(feature) {
 }
 
 function createContent(feature) {
-    var popupContents = '<h4>練馬たぬきマップ</h4>';
+    var popupContents = '<h4>ねりまオープンデータたぬき</h4>';
  
     if (feature && feature.properties) {     
         if (feature.properties.picture) {
@@ -148,4 +155,28 @@ function createContent(feature) {
     }
 
     return popupContents ;
+}
+
+function createAreaLayer(data) {
+    return L.geoJson(data, {
+        style : function(feature) {
+            if (feature.properties.N03_003 == "練馬区") {
+                return {
+                    fillColor: 'cyan',
+                    weight: 2,
+                    opacity: 1,
+                    color: 'darkgray',  //Outline color
+                    fillOpacity: 0.1
+                };
+            } else {
+                return {
+                    fillColor: 'gray',
+                    weight: 2,
+                    opacity: 1,
+                    color: 'darkgray',  //Outline color
+                    fillOpacity: 0.1
+                };
+            }
+        }
+    }) ;
 }
