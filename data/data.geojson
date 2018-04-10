@@ -180,6 +180,26 @@
     "owner_class":"nomi-ya",
     "memo_hidden":"磯料理海峡"
     }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 139.587164,35.75502 ]
+    },
+    "properties": {
+    "date":"2018/04/10",
+    "content":"謎のスペースのたぬき",
+    "address":"",
+    "picture":"35_75502_139_587164.jpg",
+    "type":"焼き物",
+    "size":"普通",
+    "memo":"ビューティサロン",
+    "fromtime":"0;00",
+    "totime":"23:59",
+    "owner_class":"salon",
+    "memo_hidden":"ビューティサロンドサカエ"
+    }
   }
 ]
 }
