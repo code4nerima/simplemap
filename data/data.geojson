@@ -5,20 +5,40 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "FIELD1":"date",
+    "FIELD4":"content",
+    "FIELD5":"address",
+    "FIELD6":"picture",
+    "FIELD7":"type",
+    "FIELD8":"size",
+    "FIELD9":"memo",
+    "FIELD10":"fromtime",
+    "FIELD11":"totime",
+    "FIELD12":"owner_class",
+    "FIELD13":"memo_hidden"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
        "coordinates":  [ 139.62135666,35.74713166 ]
     },
     "properties": {
-    "date":"2018/03/25",
-    "content":"大きめたぬき",
-    "address":"",
-    "picture":"35_74713166_139_62135666.jpg",
-    "type":"焼き物",
-    "size":"大",
-    "memo":"お蕎麦屋さん",
-    "fromtime":"0;00",
-    "totime":"23:59",
-    "owner_class":"soba-restaurant",
-    "memo_hidden":"by_Yokota"
+    "FIELD1":"2018/03/25",
+    "FIELD4":"大きめたぬき",
+    "FIELD5":"",
+    "FIELD6":"35_74713166_139_62135666.jpg",
+    "FIELD7":"焼き物",
+    "FIELD8":"大",
+    "FIELD9":"お蕎麦屋さん",
+    "FIELD10":"0;00",
+    "FIELD11":"23:59",
+    "FIELD12":"soba-restaurant",
+    "FIELD13":"by_Yokota"
     }
   },
   {
@@ -28,17 +48,17 @@
        "coordinates":  [ 139.63812694,35.73573277 ]
     },
     "properties": {
-    "date":"2018/03/25",
-    "content":"地味っぽいたぬき",
-    "address":"",
-    "picture":"35_73573277_139_63812694.jpg",
-    "type":"焼き物",
-    "size":"ミニ",
-    "memo":"天婦羅屋さん",
-    "fromtime":"0;00",
-    "totime":"23:59",
-    "owner_class":"tempra_restaurant",
-    "memo_hidden":"店名：天たけ"
+    "FIELD1":"2018/03/25",
+    "FIELD4":"地味っぽいたぬき",
+    "FIELD5":"",
+    "FIELD6":"35_73573277_139_63812694.jpg",
+    "FIELD7":"焼き物",
+    "FIELD8":"ミニ",
+    "FIELD9":"天婦羅屋さん",
+    "FIELD10":"0;00",
+    "FIELD11":"23:59",
+    "FIELD12":"tempra_restaurant",
+    "FIELD13":"店名：天たけ"
     }
   },
   {
@@ -48,17 +68,17 @@
        "coordinates":  [ 139.69593811,35.72561004 ]
     },
     "properties": {
-    "date":"2018/02/24",
-    "content":"大迫力たぬき",
-    "address":"",
-    "picture":"35_72561004_139_69593811.jpg",
-    "type":"焼き物",
-    "size":"巨大",
-    "memo":"企業",
-    "fromtime":"0;00",
-    "totime":"23:59",
-    "owner_class":"company",
-    "memo_hidden":"株式会社侍グループ"
+    "FIELD1":"2018/02/24",
+    "FIELD4":"大迫力たぬき",
+    "FIELD5":"",
+    "FIELD6":"35_72561004_139_69593811.jpg",
+    "FIELD7":"焼き物",
+    "FIELD8":"巨大",
+    "FIELD9":"企業",
+    "FIELD10":"0;00",
+    "FIELD11":"23:59",
+    "FIELD12":"company",
+    "FIELD13":"株式会社侍グループ"
     }
   },
   {
@@ -68,17 +88,17 @@
        "coordinates":  [ 139.63975524,35.73583221 ]
     },
     "properties": {
-    "date":"2018/03/25",
-    "content":"小料理屋たぬき",
-    "address":"",
-    "picture":"35_73583221_139_63975524.jpg",
-    "type":"焼き物",
-    "size":"普通",
-    "memo":"小料理屋さん",
-    "fromtime":"0;00",
-    "totime":"23:59",
-    "owner_class":"nomi-ya",
-    "memo_hidden":"小料理飛鳥"
+    "FIELD1":"2018/03/25",
+    "FIELD4":"小料理屋たぬき",
+    "FIELD5":"",
+    "FIELD6":"35_73583221_139_63975524.jpg",
+    "FIELD7":"焼き物",
+    "FIELD8":"普通",
+    "FIELD9":"小料理屋さん",
+    "FIELD10":"0;00",
+    "FIELD11":"23:59",
+    "FIELD12":"nomi-ya",
+    "FIELD13":"小料理飛鳥"
     }
   },
   {
@@ -88,17 +108,17 @@
        "coordinates":  [ 139.66223144,35.73900222 ]
     },
     "properties": {
-    "date":"2018/04/01",
-    "content":"看板坊やたぬき",
-    "address":"",
-    "picture":"35_73900222_139_66223144.jpg",
-    "type":"焼き物",
-    "size":"ミニ",
-    "memo":"お寿司屋さん",
-    "fromtime":"0;00",
-    "totime":"23:59",
-    "owner_class":"sushi-restaurant",
-    "memo_hidden":"魚がし寿司桜台店"
+    "FIELD1":"2018/04/01",
+    "FIELD4":"看板坊やたぬき",
+    "FIELD5":"",
+    "FIELD6":"35_73900222_139_66223144.jpg",
+    "FIELD7":"焼き物",
+    "FIELD8":"ミニ",
+    "FIELD9":"お寿司屋さん",
+    "FIELD10":"0;00",
+    "FIELD11":"23:59",
+    "FIELD12":"sushi-restaurant",
+    "FIELD13":"魚がし寿司桜台店"
     }
   },
   {
@@ -108,17 +128,17 @@
        "coordinates":  [ 139.6547073,35.7368716 ]
     },
     "properties": {
-    "date":"2018/04/08",
-    "content":"貴重な電飾たぬき",
-    "address":"",
-    "picture":"35_7368716_139_6547073.jpg",
-    "type":"電飾",
-    "size":"大",
-    "memo":"飲み屋さん",
-    "fromtime":"0;00",
-    "totime":"23:59",
-    "owner_class":"restaurant",
-    "memo_hidden":"たぬき"
+    "FIELD1":"2018/04/08",
+    "FIELD4":"貴重な電飾たぬき",
+    "FIELD5":"",
+    "FIELD6":"35_7368716_139_6547073.jpg",
+    "FIELD7":"電飾",
+    "FIELD8":"大",
+    "FIELD9":"飲み屋さん",
+    "FIELD10":"0;00",
+    "FIELD11":"23:59",
+    "FIELD12":"restaurant",
+    "FIELD13":"たぬき"
     }
   },
   {
@@ -128,17 +148,17 @@
        "coordinates":  [ 139.6055332,35.7443279 ]
     },
     "properties": {
-    "date":"2018/04/08",
-    "content":"金融機関のたぬきたち",
-    "address":"",
-    "picture":"35_7443279_139_6055332.jpg",
-    "type":"焼き物",
-    "size":"いろいろ",
-    "memo":"金融機関",
-    "fromtime":"0;00",
-    "totime":"23:59",
-    "owner_class":"bank",
-    "memo_hidden":"東京シティ信用金庫 石神井支店"
+    "FIELD1":"2018/04/08",
+    "FIELD4":"金融機関のたぬきたち",
+    "FIELD5":"",
+    "FIELD6":"35_7443279_139_6055332.jpg",
+    "FIELD7":"焼き物",
+    "FIELD8":"いろいろ",
+    "FIELD9":"金融機関",
+    "FIELD10":"0;00",
+    "FIELD11":"23:59",
+    "FIELD12":"bank",
+    "FIELD13":"東京シティ信用金庫 石神井支店"
     }
   },
   {
@@ -148,17 +168,17 @@
        "coordinates":  [ 139.6063252,35.7430082 ]
     },
     "properties": {
-    "date":"2018/04/08",
-    "content":"ガレージたぬき",
-    "address":"",
-    "picture":"35_7430082_139_6063252.jpg",
-    "type":"焼き物",
-    "size":"巨大",
-    "memo":"お花屋さん",
-    "fromtime":"0;00",
-    "totime":"23:59",
-    "owner_class":"flowershop",
-    "memo_hidden":"日東生花"
+    "FIELD1":"2018/04/08",
+    "FIELD4":"ガレージたぬき",
+    "FIELD5":"",
+    "FIELD6":"35_7430082_139_6063252.jpg",
+    "FIELD7":"焼き物",
+    "FIELD8":"巨大",
+    "FIELD9":"お花屋さん",
+    "FIELD10":"0;00",
+    "FIELD11":"23:59",
+    "FIELD12":"flowershop",
+    "FIELD13":"日東生花"
     }
   },
   {
@@ -168,17 +188,17 @@
        "coordinates":  [ 139.6538876,35.736106 ]
     },
     "properties": {
-    "date":"2018/02/18",
-    "content":"磯料理たぬき",
-    "address":"",
-    "picture":"35_736106_139_6538876.jpg",
-    "type":"焼き物",
-    "size":"大型",
-    "memo":"飲み屋さん",
-    "fromtime":"0;00",
-    "totime":"23:59",
-    "owner_class":"nomi-ya",
-    "memo_hidden":"磯料理海峡"
+    "FIELD1":"2018/02/18",
+    "FIELD4":"磯料理たぬき",
+    "FIELD5":"",
+    "FIELD6":"35_736106_139_6538876.jpg",
+    "FIELD7":"焼き物",
+    "FIELD8":"大型",
+    "FIELD9":"飲み屋さん",
+    "FIELD10":"0;00",
+    "FIELD11":"23:59",
+    "FIELD12":"nomi-ya",
+    "FIELD13":"磯料理海峡"
     }
   },
   {
@@ -188,17 +208,17 @@
        "coordinates":  [ 139.587164,35.75502 ]
     },
     "properties": {
-    "date":"2018/04/10",
-    "content":"謎のスペースのたぬき",
-    "address":"",
-    "picture":"35_75502_139_587164.jpg",
-    "type":"焼き物",
-    "size":"普通",
-    "memo":"ビューティサロン",
-    "fromtime":"0;00",
-    "totime":"23:59",
-    "owner_class":"salon",
-    "memo_hidden":"ビューティサロンドサカエ"
+    "FIELD1":"2018/04/10",
+    "FIELD4":"謎のスペースのたぬき",
+    "FIELD5":"",
+    "FIELD6":"35_75502_139_587164xyz.jpg",
+    "FIELD7":"焼き物",
+    "FIELD8":"普通",
+    "FIELD9":"ビューティサロン",
+    "FIELD10":"0;00",
+    "FIELD11":"23:59",
+    "FIELD12":"salon",
+    "FIELD13":"ビューティサロンドサカエ"
     }
   }
 ]
