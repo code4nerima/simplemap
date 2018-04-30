@@ -240,6 +240,46 @@
     "owner_class":"restaurant",
     "memo_hidden":"みなみ"
     }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 139.5882564,35.7391428 ]
+    },
+    "properties": {
+    "date":"2018/04/30",
+    "content":"交差点のたぬき",
+    "address":"",
+    "picture":"35_7391428_139_5882564.jpg",
+    "type":"焼き物×3",
+    "size":"サイズ：小型",
+    "memo":"地蔵のとなり",
+    "fromtime":"0;00",
+    "totime":"23:59",
+    "owner_class":"street",
+    "memo_hidden":"みなみ石神井学園前の交差点"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 139.6697059,35.7390593 ]
+    },
+    "properties": {
+    "date":"2018/04/30",
+    "content":"マスコットのたぬき",
+    "address":"",
+    "picture":"35_7390593_139_6697059.jpg",
+    "type":"キャラクター",
+    "size":"サイズ：普通",
+    "memo":"アライグマという説もあり",
+    "fromtime":"0;00",
+    "totime":"23:59",
+    "owner_class":"",
+    "memo_hidden":"カルチャースタジオRacoon"
+    }
   }
 ]
 }
