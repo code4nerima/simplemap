@@ -2,6 +2,8 @@
 //
 //
 
+var arg ;
+
 // onCreate : This function is called when page began.
 function onCreate(map) {
     // Load location.
@@ -17,6 +19,31 @@ function onCreate(map) {
     
     map = L.map('map', {zoomControl: true}).setView(latlng, zoom != null ? zoom : 13);
     
+    // from URL
+    arg = new Object;
+
+    var pair=location.search.substring(1).split('&');
+    
+	for(var i=0;pair[i];i++) {
+		var kv = pair[i].split('=');
+		arg[kv[0]]=kv[1];
+    }
+    
+    var latlng = null ;
+    var lng = arg["lng"] ;
+    var lat = arg["lat"] ;
+    var zoom = arg["z"] ;
+    
+    var latlng = null ;
+
+    if (lat != null && lng != null) {
+		latlng = [lat, lng];
+    }
+    
+    if (latlng != null) {
+        map.setView(latlng, zoom != null ? zoom : map.getZoom());
+    }
+
     var mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
     
     L.tileLayer(
@@ -49,6 +76,12 @@ function onCreate(map) {
     
     $(".info").css("display", "none") ;
     
+    var largeMarkerIcon = L.icon({
+        iconUrl: 'tanuki_icon.png',
+        iconSize: [80, 80],
+        popupAnchor: [0, -40],
+    });
+
     var markerIcon = L.icon({
         iconUrl: 'tanuki_icon.png',
         iconSize: [40, 40],
@@ -69,13 +102,23 @@ function onCreate(map) {
     $.getJSON('./data/data.geojson', function(data) {
         L.geoJson(data, {
             pointToLayer: function(geoJsonPoint, latlng) {
-                return L.marker(latlng, {icon: markerIcon}).addTo(map)
+                if (lat != null && lng != null && latlng.lat == lat && latlng.lng == lng) {
+                    return L.marker(latlng, {icon:largeMarkerIcon}).addTo(map) ;
+                } else {
+                    return L.marker(latlng, {icon: markerIcon}).addTo(map) ;
+                }
             },
             onEachFeature: function(feature, layer) {
                 var popupContents = onCraeteMarkerPopup(feature, layer) ;
     
-                   layer.bindPopup(popupContents);
+                layer.bindPopup(popupContents);
      
+                if (lat != null && lng != null &&
+                    feature.geometry.coordinates[1] == lat && feature.geometry.coordinates[0] == lng
+                ) {
+                    info.update(feature);
+                }
+
                 layer.on({
                     mouseover: function(e){  
                         info.update(feature);
@@ -152,6 +195,13 @@ function createContent(feature) {
         if (feature.properties.memo) {
             popupContents += "<br />" + feature.properties.memo;
         }
+
+        var href = location.protocol + '//' + location.hostname + ':' + location.port + location.pathname;      
+        var link = href + '?lng=' + feature.geometry.coordinates[0] + '&lat=' + feature.geometry.coordinates[1] ;
+ 
+        popupContents += '<table>'
+        popupContents += '<tr><td><div class="link">' + '<a href="' + link + '">' + link + '</a></td></tr>' ;
+        popupContents += "</table>" ;
     }
 
     return popupContents ;
