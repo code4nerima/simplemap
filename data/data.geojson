@@ -280,6 +280,46 @@
     "owner_class":"",
     "memo_hidden":"カルチャースタジオRacoon"
     }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 139.6306315,35.7575313 ]
+    },
+    "properties": {
+    "date":"2018/05/08",
+    "content":"蜻蛉たぬき",
+    "address":"",
+    "picture":"35_7575313_139_6306315.jpg",
+    "type":"焼き物",
+    "size":"サイズ：中型",
+    "memo":"飲み屋さん",
+    "fromtime":"0;00",
+    "totime":"23:59",
+    "owner_class":"",
+    "memo_hidden":"蜻蛉"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 139.6383422,35.7341343 ]
+    },
+    "properties": {
+    "date":"2018/05/10",
+    "content":"焼きとんたぬき",
+    "address":"",
+    "picture":"35_7341343_139_6383422.jpg",
+    "type":"焼き物",
+    "size":"サイズ：小さめ",
+    "memo":"飲み屋さん",
+    "fromtime":"0;00",
+    "totime":"23:59",
+    "owner_class":"",
+    "memo_hidden":"とん兵衛"
+    }
   }
 ]
 }
