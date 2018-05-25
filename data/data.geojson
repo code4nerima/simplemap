@@ -285,13 +285,13 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 139.6306315,35.7575313 ]
+       "coordinates":  [ 139.6328362,35.757524 ]
     },
     "properties": {
     "date":"2018/05/08",
     "content":"蜻蛉たぬき",
     "address":"",
-    "picture":"35_7575313_139_6306315.jpg",
+    "picture":"35_757524_139_6328362.jpg",
     "type":"焼き物",
     "size":"サイズ：中型",
     "memo":"飲み屋さん",
@@ -319,6 +319,66 @@
     "totime":"23:59",
     "owner_class":"",
     "memo_hidden":"とん兵衛"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 139.67439166,35.73092777 ]
+    },
+    "properties": {
+    "date":"2018/05/19",
+    "content":"鉢植えたぬき",
+    "address":"",
+    "picture":"35_73092777_139_67439166.jpg",
+    "type":"焼き物",
+    "size":"サイズ：ミニ",
+    "memo":"スナック",
+    "fromtime":"0;00",
+    "totime":"23:59",
+    "owner_class":"",
+    "memo_hidden":"伊和"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 139.58137500,35.74708055 ]
+    },
+    "properties": {
+    "date":"2018/05/20",
+    "content":"ソバリエたぬき",
+    "address":"",
+    "picture":"35_74708055_139_58137500.jpg",
+    "type":"焼き物",
+    "size":"サイズ：小さめ",
+    "memo":"お蕎麦屋さん",
+    "fromtime":"0;00",
+    "totime":"23:59",
+    "owner_class":"",
+    "memo_hidden":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 139.5871358368,35.7553900336 ]
+    },
+    "properties": {
+    "date":"2018/05/20",
+    "content":"パイプたぬき",
+    "address":"",
+    "picture":"35_7553900336_139_5871358368.jpg",
+    "type":"焼き物",
+    "size":"サイズ：ミニ",
+    "memo":"飲食店の跡地（？）",
+    "fromtime":"0;00",
+    "totime":"23:59",
+    "owner_class":"salon",
+    "memo_hidden":"詳細不明"
     }
   }
 ]
