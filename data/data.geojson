@@ -380,6 +380,26 @@
     "owner_class":"salon",
     "memo_hidden":"詳細不明"
     }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 139.592579,35.755572 ]
+    },
+    "properties": {
+    "date":"2018/05/30",
+    "content":"ひやしたぬきそば",
+    "address":"",
+    "picture":"35_755572_139_592579.jpg",
+    "type":"焼き物",
+    "size":"サイズ：ミニ",
+    "memo":"お蕎麦屋さん",
+    "fromtime":"0;00",
+    "totime":"23:59",
+    "owner_class":"salon",
+    "memo_hidden":"つかもと"
+    }
   }
 ]
 }
