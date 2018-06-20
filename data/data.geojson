@@ -400,6 +400,46 @@
     "owner_class":"salon",
     "memo_hidden":"つかもと"
     }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 139.593254,35.756308 ]
+    },
+    "properties": {
+    "date":"2018/06/06",
+    "content":"集会たぬき",
+    "address":"",
+    "picture":"35_756308_139_593254.jpg",
+    "type":"焼き物",
+    "size":"サイズ：様々",
+    "memo":"謎スペース",
+    "fromtime":"0;00",
+    "totime":"23:59",
+    "owner_class":"",
+    "memo_hidden":"詳細不明"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 139.5751353,35.7272916 ]
+    },
+    "properties": {
+    "date":"2018/06/15",
+    "content":"酒楽たぬき",
+    "address":"",
+    "picture":"35_7272916_139_5751353.jpg",
+    "type":"焼き物",
+    "size":"サイズ：中型",
+    "memo":"眼科のそば",
+    "fromtime":"0;00",
+    "totime":"23:59",
+    "owner_class":"飲み屋さん",
+    "memo_hidden":"酒楽"
+    }
   }
 ]
 }
