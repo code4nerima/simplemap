@@ -440,6 +440,46 @@
     "owner_class":"飲み屋さん",
     "memo_hidden":"酒楽"
     }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 139.666335,35.747542 ]
+    },
+    "properties": {
+    "date":"2018/06/25",
+    "content":"JAたぬたぬ",
+    "address":"",
+    "picture":"35.747542_139.666335.jpg",
+    "type":"焼き物",
+    "size":"サイズ：大きめ",
+    "memo":"JA販売所",
+    "fromtime":"0;00",
+    "totime":"23:59",
+    "owner_class":"商業施設",
+    "memo_hidden":"JA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 139.591920,35.759498 ]
+    },
+    "properties": {
+    "date":"2018/07/03",
+    "content":"nericafe近くのたぬき",
+    "address":"",
+    "picture":"35.759498_139.591920.jpg",
+    "type":"焼き物",
+    "size":"サイズ：小型",
+    "memo":"クランクのところ",
+    "fromtime":"0;00",
+    "totime":"23:59",
+    "owner_class":"道路沿い",
+    "memo_hidden":"nericafe近く"
+    }
   }
 ]
 }
